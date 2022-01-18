@@ -111,6 +111,8 @@ h1 {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 80px;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
 
 }
 
