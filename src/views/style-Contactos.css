@@ -60,26 +60,31 @@ h1 {
     color: #274c77;
 }
 
-/*Lista de menu*/
-.menu {
-    width: 70%;
-    float: right;
-    text-align:right;
-    font-size: 25px;
-    margin-top: -10%;
-    margin-right: 10px;
-}
-
-.menu ul li {
-    display:inline-block;
+/* Menu */
+.menu ul {
     list-style-type: none;
-    text-align: left;
+    margin: -20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    margin-left: 690px;
 }
 
-.menu ul li a {
-    padding: 15px;
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: rgb(5, 5, 5);
+    text-align: center;
     text-decoration: none;
-    color: #0a2547;
+    padding: 14px 20px;  
+}
+
+li a:hover {
+    background-color: #d6efff;
 }
 /* Fin Header*/
 

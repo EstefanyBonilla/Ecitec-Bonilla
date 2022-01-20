@@ -5,31 +5,23 @@ Elimina los valores predeterminados  */
 @import url("https://fonts.googleapis.com/css2?family=Spectral&display=swap");
 
 
-
-
-
 /*Body*/
-
-
 body {
     width:100%;
     margin-left: 0%;
     margin-right: 0%;
     margin-top: 0%;
-    margin-bottom: 5.6%;
+    margin-bottom: 0px;
     font-family: "Spectral", serif;
 } 
 
-  
-  /* Header-- aqui inicia */
+/* Header-- aqui inicia */
 header {
     height: 135px; 
     width: 100%;
     margin-top: 15px;
     background-color:white;
 }
-
-
 
 /*imagen del logo*/
 .logo {
@@ -49,7 +41,6 @@ h1 {
     margin-bottom: 0px;
     margin-top: 0px;
     font-size: 45px;
-    
 }
 
 
@@ -63,35 +54,45 @@ h1 {
     text-align: left;
     color: #274c77;
 }
-    
 
 
-/*Lista de menu*/
-
-.menu {
-    width: 70%;
-    float: right;
-    text-align: end;
-    font-size: 25px;
-    margin-top: -10%;
-    margin-right: 10px;
-}
-
-.menu ul li {
-    display:inline-block;
+/* Menu */
+.menu ul {
     list-style-type: none;
-    text-align: left;
+    margin: -20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    margin-left: 690px;
 }
 
-.menu ul li a {
-    padding: 15px;
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: rgb(5, 5, 5);
+    text-align: center;
     text-decoration: none;
-    color: #274c77;
+    padding: 14px 20px;
+    
 }
 
+li a:hover {
+    background-color: #d6efff;
+}
 /* Fin Header*/
 
-
+/*Linea horizontal*/
+.hr-top {
+    border-width: 17px;
+    border-style: solid;
+    border-color:#07396b;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 /*imagen de fondo*/
 .img-presentacion {
@@ -102,8 +103,27 @@ h1 {
     width: 100%;
 }
 
+/*Animacion del texto sobre la imagen*/
+.animacion {
+    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; 
+}
+
+@keyframes fadeInDown {
+    from {
+        top: 27%;
+        left: 35%;
+    }
+    to {
+        top: 50%;
+        left: 35%;
+    }
+}
+/*Termina animacion*/
+
+
 /*texto sobre imagen de fondo*/
-.texto-de-img p {
+.texto-img {
     text-align: left;
     position: absolute;
     top: 50%;
@@ -111,34 +131,28 @@ h1 {
     transform: translate(-50%, -50%);
     color: white;
     font-size: 80px;
-    animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; 
-    
 }
 
-hr {
+/*Linea horizontal*/
+.hr-cuerpo {
     border-width: 1px;
     border-style: solid;
-    border-color:#a5a5a5;
+    border-color:#07396b;
     margin-top: 0px;
+    margin-bottom: 0px;
 
 }
-
 
 /*Parrafo*/
 .one {
-    
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 20px;
     text-align: center;
     padding-top: 0px;
-    color: black;
-    background-color: #ffff;
-    
+    color: white;
+    background-color:#07396b;   
 }
-
-
 
 /* Inicio de section de servicios*/
 .titulo-servicios {
@@ -149,7 +163,6 @@ hr {
 
 /*Directorio de servicios*/
 /*Imagen del servicio*/
-
 div.servicios {
     border: 1px solid #ccc;
     float: left;
@@ -174,7 +187,6 @@ div.desc {
 }
 /*fin de section*/
 
-
 /*Linea horizontal con clase*/ 
 .hr-cotizacion {
     border-width: 1px;
@@ -182,7 +194,6 @@ div.desc {
     border-color: #fff;
     margin-top: 380px;
 }
-
 
 section.cotizacion {
     height: 125px; 
@@ -192,7 +203,6 @@ section.cotizacion {
     background-color:#fff;
 }
 
-
 /* texto de cotizacion*/
 .text-cotizacion {
     font-size: 25px;
@@ -201,7 +211,6 @@ section.cotizacion {
     background-color: #fff;
 }
 
-
 /*Boton de cotizacion*/
 .button {
     display: block;
@@ -209,17 +218,17 @@ section.cotizacion {
     height: 30px;
     padding: 10px;
     margin: 10px auto;
-    background: #7f181b;
+    background: #039df7;
     font: bold 25px "Spectral", serif;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
 
-    background-image: -webkit-linear-gradient(top, #7f181b, #00c4ff);
-    background-image: -moz-linear-gradient(top, #7f181b, #00c4ff);
-    background-image: -ms-linear-gradient(top, #7f181b, #00c4ff);
-    background-image: -o-linear-gradient(top, #7f181b, #00c4ff);
-    background-image: linear-gradient(to bottom, #7f181b, #00c4ff);
+    background-image: -webkit-linear-gradient(top, #039df7, #0e3258);
+    background-image: -moz-linear-gradient(top, #039df7, #0e3258);
+    background-image: -ms-linear-gradient(top, #039df7, #0e3258);
+    background-image: -o-linear-gradient(top, #039df7, #0e3258);
+    background-image: linear-gradient(to bottom, #039df7, #0e3258);
 
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
@@ -228,16 +237,21 @@ section.cotizacion {
 
 
 .button:hover {
-    background: #00c4ff;
-    background-image: -webkit-linear-gradient(top, #00c4ff, #7f181b);
-    background-image: -moz-linear-gradient(top, #00c4ff, #7f181b);
-    background-image: -ms-linear-gradient(top, #00c4ff, #7f181b);
-    background-image: -o-linear-gradient(top, #00c4ff, #7f181b);
-    background-image: linear-gradient(to bottom, #00c4ff, #7f181b);
+    background: #0e3258;
+    background-image: -webkit-linear-gradient(top, #0e3258, #039df7);
+    background-image: -moz-linear-gradient(top, #0e3258, #039df7);
+    background-image: -ms-linear-gradient(top, #0e3258, #039df7);
+    background-image: -o-linear-gradient(top, #0e3258, #039df7);
+    background-image: linear-gradient(to bottom, #0e3258, #039df7);
     text-decoration: none;
-
 }
 
+.animation {
+    animation: headShake;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+/*Termina Boton*/
 
 /*Linea horizontal con clase*/ 
 .hr-ubicacion{
@@ -255,10 +269,7 @@ section.cotizacion {
     background-color:white;
 }
 
-/*titulo de la compañia*/
-/*Este lleva el logo a su izquierda*/
-/*Texto descriptivo de la compañia*/
-
+/*Logo*/
 .logo-final {
     width: 120px;
     height: 120px;
@@ -280,6 +291,7 @@ section.cotizacion {
     color: #274c77;
 }
 
+/*Texto descriptivo de la compañia*/
 .bio {
     font-size: 20px;
     width:425px;
@@ -302,19 +314,25 @@ section.cotizacion {
     top:-10px;
     width: 459px;
     height: 110px;
+    border: 1px solid #777;
 }
 
-
+/*Linea horizontal con clase*/
 .hr-footer {
     border-width: 1px;
     border-style: solid;
     border-color:#a5a5a5;
     margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 footer {
-    width: 100%;
-    background-color: #274c77;
+
+    width: 1259px;
+    height: 60px;
+    border: 2px solid #dcdfe2;
+    background-color: #dcdfe2;
+
 }
 
 /*Icon de facebook*/
